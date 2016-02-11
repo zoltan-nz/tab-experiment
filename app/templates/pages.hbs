@@ -1,0 +1,9 @@
+<h1>The Page</h1>
+
+<select class="form-control" onchange={{action 'pageChanged' value='target.value'}}>
+  {{#each model as |page| }}
+    <option value="{{page.id}}">{{page.title}}</option>
+  {{/each}}
+</select>
+
+{{outlet}}
